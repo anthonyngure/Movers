@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ Copyright (c) 2017. Laysan Incorporation
+  ~ Website http://laysan.co.ke
+  ~ Tel +254723203475/+254706356815
+  -->
+
+<resources>
+
+
+   <!-- <style name="METAuthField">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="met_primaryColor">@android:color/white</item>
+        <item name="met_baseColor">@android:color/white</item>
+        <item name="met_textColorHint">@android:color/white</item>
+        <item name="met_floatingLabelTextColor">@android:color/white</item>
+        <item name="met_textColor">@color/colorAccent</item>
+        <item name="met_iconPadding">8dp</item>
+        <item name="met_floatingLabel">highlight</item>
+        <item name="android:imeOptions">actionNext</item>
+    </style>-->
+
+</resources>

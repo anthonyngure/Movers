@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:background="?attr/selectableItemBackground">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/list_row_padding"
+        android:layout_gravity="center">
+
+        <ke.co.toshngure.basecode.images.NetworkImage
+            android:id="@+id/avatarIV"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            app:niCircled="false"
+            app:niSrc="@drawable/pick_up"
+            android:layout_marginBottom="@dimen/list_row_padding"/>
+
+        <TextView
+            android:id="@+id/nameTV"
+            style="@style/BaseApp.Heading"
+            android:layout_width="wrap_content"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/costTV"
+            style="@style/BaseApp.Body"
+            android:layout_width="wrap_content"
+            android:textAllCaps="true"
+            android:text="@string/app_name" />
+
+        <TextView
+            android:id="@+id/weightTV"
+            style="@style/BaseApp.Body"
+            android:layout_width="wrap_content"
+            android:text="@string/max_weight"/>
+
+        <TextView
+            android:id="@+id/volumeTV"
+            style="@style/BaseApp.Body"
+            android:layout_width="wrap_content"
+            android:text="@string/max_weight"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/checkedIV"
+        android:contentDescription="@string/app_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top|end"
+        android:tint="@android:color/holo_green_dark"
+        android:src="@drawable/ic_check_circle_black_24dp"
+        android:visibility="gone"/>
+
+</FrameLayout>

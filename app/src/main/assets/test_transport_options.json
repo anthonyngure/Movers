@@ -1,0 +1,51 @@
+[
+  {
+    "name": "Motor bike",
+    "maxWeight": 200.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Pick up",
+    "maxWeight": 2000.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Small truck",
+    "maxWeight": 3500.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Medium truck",
+    "maxWeight": 5000.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Big truck",
+    "maxWeight": 10000.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Trailer(20ft)",
+    "maxWeight": 15000.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  },
+  {
+    "name": "Trailer(40ft)",
+    "maxWeight": 250000.00,
+    "maxVolume": 1200.00,
+    "time": "2hrs 30min",
+    "cost": 200.00
+  }
+]

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ke.co.toshngure.basecode.view.SimpleListItemView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:sli_Title="@string/app_name"
+    app:sli_SubTitle="@string/ask_for_transport"
+    app:sli_Drawable="@drawable/ic_location_on_black_24dp"
+    app:sli_DrawableCentered="true"
+    app:sli_DrawableTint="?attr/colorAccent" />

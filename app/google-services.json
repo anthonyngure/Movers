@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "382538333771",
+    "firebase_url": "https://movers-91a5b.firebaseio.com",
+    "project_id": "movers-91a5b",
+    "storage_bucket": "movers-91a5b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:382538333771:android:0a42f25b0d7ebcee",
+        "android_client_info": {
+          "package_name": "ke.co.thinksynergy.movers"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "382538333771-krb4mp9gb2jh5ocp9fntpqqfjd98bmlf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ke.co.thinksynergy.movers",
+            "certificate_hash": "668f27825af264ee6373799b6ac99dc0a3808211"
+          }
+        },
+        {
+          "client_id": "382538333771-usogljolqh9g1q3la7k5rggelitd9k8l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDErFxqq5PK8U0HorgvzfjelqvuRSsVuro"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "382538333771-usogljolqh9g1q3la7k5rggelitd9k8l.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

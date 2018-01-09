@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>-->
+
+    <color name="colorPrimary">#FFFFFF</color>
+    <color name="colorPrimaryDark">#CCCCCC</color>
+    <color name="colorAccent">#000000</color>
+
+    <color name="circle_color_default_gray">#BDBDBD</color>
+    <color name="facebook">#39579B</color>
+    <color name="facebook_focused">#6183d2</color>
+
+</resources>

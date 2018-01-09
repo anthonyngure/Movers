@@ -1,0 +1,176 @@
+<!--
+  ~ Copyright (c) 2017.
+  ~
+  ~ Anthony Ngure
+  ~
+  ~ Email : anthonyngure25@gmail.com
+  -->
+
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/coordinatorLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activity.MainActivity">
+
+    <FrameLayout
+        android:id="@+id/mapContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_marginTop="@dimen/main_app_bar_height">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/errorTV"
+                style="@style/BaseApp.Body"
+                android:text="@string/lorem_text"
+                android:layout_alignParentBottom="true"
+                android:background="@android:color/holo_red_dark"
+                android:textColor="@android:color/white"
+                android:padding="@dimen/list_row_padding"
+                android:visibility="gone"/>
+            <fragment
+                android:id="@+id/map"
+                android:layout_above="@id/errorTV"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent" />
+        </RelativeLayout>
+
+        <include layout="@layout/layout_fake_shadow" />
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top"
+            android:indeterminate="true"
+            android:visibility="visible"/>
+
+
+    </FrameLayout>
+
+    <include layout="@layout/activity_main_bottom_sheet" />
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/appBarLayout"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/main_app_bar_height"
+        android:theme="@style/ThemeOverlay.AppCompat.Light">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_collapseMode="pin"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:contentInsetStartWithNavigation="0dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="0dp"
+                android:paddingStart="0dp"
+                android:paddingEnd="@dimen/list_row_padding"
+                android:paddingRight="@dimen/list_row_padding"
+                android:paddingTop="@dimen/activity_vertical_margin"
+                android:paddingBottom="@dimen/list_row_padding">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="0dp"
+                    android:layout_marginStart="0dp"
+                    android:layout_marginRight="@dimen/list_row_padding"
+                    android:layout_marginEnd="@dimen/list_row_padding"
+                    android:layout_marginTop="@dimen/list_row_padding"
+                    android:layout_marginBottom="@dimen/list_row_padding"
+                    android:orientation="vertical">
+
+                    <ke.co.thinksynergy.movers.view.RoundedView
+                        android:id="@+id/originRV"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+
+                    <View
+                        android:layout_width="0.5dp"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center"
+                        android:layout_weight="1"
+                        android:background="?attr/colorAccent" />
+
+                    <ke.co.thinksynergy.movers.view.RoundedView
+                        android:id="@+id/destinationRV"
+                        android:layout_width="8dp"
+                        android:layout_height="8dp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:focusableInTouchMode="true"
+                    android:orientation="vertical">
+
+                    <EditText
+                        android:id="@+id/originET"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginBottom="@dimen/list_row_padding"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_origin_edit_text"
+                        android:ellipsize="end"
+                        android:hint="@string/moving_from"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/list_row_padding"
+                        android:paddingRight="@dimen/list_row_padding"
+                        android:inputType="none"
+                        android:focusableInTouchMode="true"
+                        android:focusable="false"
+                        android:editable="false"
+                        android:singleLine="true"/>
+
+                    <EditText
+                        android:id="@+id/destinationET"
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/background_destination_edit_text"
+                        android:ellipsize="end"
+                        android:hint="@string/moving_to"
+                        android:inputType="textCapWords"
+                        android:imeOptions="actionDone"
+                        android:maxLines="1"
+                        android:paddingLeft="@dimen/list_row_padding"
+                        android:paddingRight="@dimen/list_row_padding"
+                        android:singleLine="true" />
+
+                </LinearLayout>
+
+            </LinearLayout>
+        </android.support.v7.widget.Toolbar>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|end"
+        android:layout_margin="@dimen/fab_margin"
+        android:src="@drawable/ic_gps_fixed_black_24dp"
+        android:tint="?attr/colorPrimary"
+        app:layout_anchor="@id/bottomSheet"
+        app:fabSize="mini"
+        app:backgroundTint="?attr/colorAccent"
+        app:layout_anchorGravity="top|right|end"/>
+
+</android.support.design.widget.CoordinatorLayout>
+

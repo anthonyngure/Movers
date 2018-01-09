@@ -1,0 +1,24 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingTop="@dimen/activity_vertical_margin">
+
+    <com.jaychang.srv.SimpleRecyclerView
+        android:id="@+id/autocompletePredictionsRV"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:srv_dividerOrientation="horizontal"
+        app:srv_dividerPaddingBottom="0dp"
+        app:srv_dividerPaddingLeft="0dp"
+        app:srv_dividerPaddingRight="0dp"
+        app:srv_dividerPaddingTop="0dp"
+        app:srv_emptyStateView="@layout/view_autocomplete_predictions_empty"
+        app:srv_layoutMode="linearVertical"
+        app:srv_showDivider="true"
+        app:srv_showEmptyStateView="true"
+        app:srv_showLastDivider="false"/>
+
+
+</LinearLayout>
